@@ -60,7 +60,7 @@ pipeline {
                         ).trim()
 
                     // Update the ECS service with the new task definition
-                    sh "aws ecs update-service --cluster flask-pipeline-ecs --service ecs-deploy-service --task-definition arn:aws:ecs:us-east-1:731253471521:task-definition/ecs-aws-cli-defination:2"
+                    sh "aws ecs update-service --cluster flask-pipeline-ecs --service ecs-deploy-service --task-definition ${newTaskDef}"
                 }
             }
         }
