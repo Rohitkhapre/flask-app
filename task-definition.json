@@ -1,0 +1,18 @@
+{
+  "family": "ecs-aws-cli-defination",
+  "containerDefinitions": [
+    {
+      "name": "ecs-flask-aws-cli",
+      "image": "731253471521.dkr.ecr.us-east-1.amazonaws.com/docker-ecs-repo:7",
+      "cpu": 256,
+      "memory": 512,
+      "portMappings": [
+        {
+          "containerPort": 5000,
+          "hostPort": 441
+        }
+      ]
+    }
+  ]
+}
+
