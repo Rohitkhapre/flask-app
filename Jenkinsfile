@@ -28,7 +28,7 @@ pipeline {
         stage('Building image') {
             steps {
                 script {
-                    dockerImage = docker.build --no-cache ${IMAGE_REPO_NAME}:${IMAGE_TAG}"
+                    dockerImage = docker.build  ${IMAGE_REPO_NAME}:${IMAGE_TAG}"
                 }
             }
         }
